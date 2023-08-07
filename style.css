@@ -4,9 +4,9 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 :root,
 [data-bs-theme=light] {
@@ -11876,12 +11876,12 @@ header img {
 }
 
 #home {
-  background-image: url(../images/background/dogs.jpg);
+  background-image: url(https://cdn.iview.abc.net.au/thumbs/i/zw/ZW2440A_6062aa7774320.jpg);
 }
 
 .modal button {
-  background-color: black;
-  color: white;
+  background-color: rgb(117, 184, 230);
+  color: black;
   border: none;
 }
 .modal button:hover {
@@ -11901,8 +11901,8 @@ header img {
 .button1,
 #form button,
 #onas button {
-  background-color: black;
-  color: white;
+  background-color: rgb(117, 184, 230);
+  color: black;
   border: none;
 }
 .button1:hover,
@@ -11927,6 +11927,10 @@ header img {
   min-height: 100vh;
 }
 
+#onas h3, #onas .h3 {
+  font-weight: bolder;
+}
+
 .about-card {
   border: 1px solid black;
   background-color: white;
@@ -11941,16 +11945,23 @@ header img {
   height: fit-content;
 }
 
+#ohlasy p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
 .font1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .font2 {
-  font-family: "Handjet", cursive;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .font3 {
-  font-family: "Edu SA Beginner", cursive;
+  font-family: "Cormorant Garamond", serif;
 }
 
 #kontakty img {

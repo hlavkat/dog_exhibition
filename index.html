@@ -72,7 +72,7 @@
             data-bs-toggle="modal"
             data-bs-target="#Modal"
           >
-            Přihlaš se
+            Registruj se
           </button>
           <button
             type="button"
@@ -195,6 +195,7 @@
           </div>
         </div>
       </section>
+      <!-- about -->
       <section id="onas">
         <h1 class="text-center m-2 m-md-5">O nás</h1>
         <div class="container-fluid">
@@ -212,16 +213,16 @@
                 <h3 class="text-center">Výstavy pořádáme 15 let !</h3>
                 <button
                   type="button"
-                  class="btn d-block d-md-none my-4"
-                  onclick="show('#img1')"
+                  class="btn d-block d-md-none my-4 changeText"
+                  onclick="show('#img1','#toggleButton1')"
+                  id="toggleButton1"
                 >
                   Zobraz obrázek
                 </button>
                 <p class="p-5 font1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  natus sint laborum asperiores delectus expedita, eos libero
-                  quam soluta harum dolore dolor iure facere culpa voluptatum
-                  assumenda officiis? Harum, cupiditate.
+                  Pořádáme výstavy pro různé organizace po celém světě. Na
+                  výstavách vždy dbáme na to, aby si to užili psi i jejich
+                  majitelé
                 </p>
               </div>
             </div>
@@ -239,15 +240,15 @@
                 <button
                   type="button"
                   class="btn d-block d-md-none my-4"
-                  onclick="show('#img2')"
+                  onclick="show('#img2','#toggleButton2')"
+                  id="toggleButton2"
                 >
                   Zobraz obrázek
                 </button>
                 <p class="p-5 font2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  natus sint laborum asperiores delectus expedita, eos libero
-                  quam soluta harum dolore dolor iure facere culpa voluptatum
-                  assumenda officiis? Harum, cupiditate.
+                  Naši komisaři patří k nejlepším na světě, mají letité
+                  zkušenosti a vyznají se v tom, jak má každá rasa skutečně
+                  vypadat
                 </p>
               </div>
             </div>
@@ -265,21 +266,22 @@
                 <button
                   type="button"
                   class="btn d-block d-md-none my-4"
-                  onclick="show('#img3')"
+                  onclick="show('#img3','#toggleButton3')"
+                  id="toggleButton3"
                 >
                   Zobraz obrázek
                 </button>
                 <p class="p-5 font3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  natus sint laborum asperiores delectus expedita, eos libero
-                  quam soluta harum dolore dolor iure facere culpa voluptatum
-                  assumenda officiis? Harum, cupiditate.
+                  Dbáme na zdraví a komfort psů, proto na všech našich výstavách
+                  je vždy k dispozici hned několik veterinářů na
+                  třech stanovištích
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- galery -->
       <section id="galerie">
         <h1 class="text-center m-2 m-md-5">Galerie</h1>
         <div id="carousel" class="carousel slide">
@@ -314,18 +316,19 @@
           </button>
         </div>
       </section>
+      <!-- reviews -->
       <section id="ohlasy">
         <h1 class="text-center m-2 m-md-5">Ohlasy návštěvníků</h1>
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center h-100">
                 <div class="card-header"><h5>xxx@xxx.xx</h5></div>
                 <div class="card-body bg-info">
                   <h5 class="card-title">Hodnocení</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint, ullam?
+                    Byly jsme na výstavě ve Vídni a obrovská spokojenost. Skvěle
+                    zorganizované
                   </p>
                   <img src="images/icons/star.svg" alt="star" />
                   <img src="images/icons/star.svg" alt="star" />
@@ -337,13 +340,12 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center h-100">
                 <div class="card-header"><h5>xxx@xxx.xx</h5></div>
                 <div class="card-body bg-info">
                   <h5 class="card-title">Hodnocení</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint, ullam?
+                    Great dog show, we will definitely come again!
                   </p>
                   <img src="images/icons/star.svg" alt="star" />
                   <img src="images/icons/star.svg" alt="star" />
@@ -355,13 +357,12 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center h-100">
                 <div class="card-header"><h5>xxx@xxx.xx</h5></div>
                 <div class="card-body bg-info">
                   <h5 class="card-title">Hodnocení</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint, ullam?
+                    Niesamowita wystawa, poznaliśmy nowych hodowców.
                   </p>
                   <img src="images/icons/star.svg" alt="star" />
                   <img src="images/icons/star.svg" alt="star" />
@@ -373,13 +374,13 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center h-100">
                 <div class="card-header"><h5>xxx@xxx.xx</h5></div>
                 <div class="card-body bg-info">
                   <h5 class="card-title">Hodnocení</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint, ullam?
+                    Velká spokojenost, šli jsme vždy hned na řadu a
+                    nemusely jsme čekat.
                   </p>
                   <img src="images/icons/star.svg" alt="star" />
                   <img src="images/icons/star.svg" alt="star" />
@@ -393,6 +394,7 @@
           </div>
         </div>
       </section>
+      <!-- form -->
       <section id="form">
         <h1 class="text-center m-2 m-md-5">Formulář</h1>
         <div class="container-fluid">
@@ -449,6 +451,7 @@
           </form>
         </div>
       </section>
+      <!-- map -->
       <section id="mapa">
         <h1 class="text-center m-2 m-md-5">Mapa</h1>
         <div class="container-fluid d-flex justify-content-center">
@@ -464,6 +467,7 @@
         </div>
       </section>
     </main>
+    <!-- footer>contact -->
     <footer>
       <section id="kontakty">
         <h1 class="text-center m-2 m-md-5">Kontakty</h1>
@@ -574,9 +578,17 @@
       updateActiveNav();
     </script>
     <script>
-      function show(id) {
+      function show(id, buttonId) {
         let img = document.querySelector(id);
+        let button = document.querySelector(buttonId);
+
         img.classList.toggle("d-none");
+
+        if (img.classList.contains("d-none")) {
+          button.textContent = "Zobraz obrázek";
+        } else {
+          button.textContent = "Skryj obrázek";
+        }
       }
     </script>
   </body>
